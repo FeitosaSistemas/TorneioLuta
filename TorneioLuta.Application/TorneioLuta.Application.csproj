@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TorneioApp.cs~RF15a20064.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TorneioLuta.Interfaces\TorneioLuta.Interfaces.csproj" />
+    <ProjectReference Include="..\TorneioLuta.Services\TorneioLuta.Services.csproj" />
+  </ItemGroup>
+
+</Project>

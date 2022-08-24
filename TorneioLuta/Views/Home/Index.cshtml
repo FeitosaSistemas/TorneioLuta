@@ -1,0 +1,40 @@
+﻿@using TorneioLuta.Domain.Entities
+@model List<Lutador>
+@{
+    ViewData["Title"] = "Torneio de Lutas";
+}
+<div class="lutadores">
+    <div class="text-center">
+        <h1 class="display-4">Lista de Lutadores</h1>
+        <p>Selecione 20 lutadores para iniciar o torneio.</p>
+    </div>
+    <p></p>
+    <div class="alert alert-danger hide" role="alert">
+        <p>Para iniciar o torneio é necessário selecionar somente 20 lutadores.</p>
+    </div>
+    <p></p>
+    <div class="text-left">
+        <button id="btStart">Iniciar</button>
+    </div>
+    <p></p>
+    <div class="text-left">
+        @{
+            foreach (var item in @Model)
+            {
+                            <div class="list-group-lutadores">
+                                <ul class="list-group">
+                                    <li class="list-group-item lutadores-title">
+                                        <input type="checkbox" class="form-check-input" name="cbLutadores" value="@item.Id" id="lutadorId" />
+                                        @item.Nome
+                                    </li>
+                                    <li class="list-group-item lutadores-item">Idade: @item.Idade</li>
+                                    <li class="list-group-item lutadores-item">Lutas: @item.Lutas</li>
+                                    <li class="list-group-item lutadores-item">Derrotas: @item.Derrotas</li>
+                                    <li class="list-group-item lutadores-item">Vitórias: @item.Vitorias</li>
+                                    <li class="list-group-item lutadores-item">Artes Marciais: @item.ArtesMarciais.Count</li>
+                                </ul>
+                            </div>
+            }
+        }
+    </div>
+</div>

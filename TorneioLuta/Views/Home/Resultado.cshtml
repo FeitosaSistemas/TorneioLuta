@@ -1,0 +1,40 @@
+﻿@using TorneioLuta.Domain.DTO
+@using TorneioLuta.Domain.Enum
+@model List<GrupoDTO>
+@{
+    ViewData["Title"] = "Resultado do Torneio";
+}
+<div class="lutadores">
+    <div class="lutadores">
+        <div class="text-center">
+            <h1 class="display-4">Resultado do Torneio</h1>
+            <p></p>
+            <div class="text-center" style="width: 150px">
+                <div class="list-group-lutadores">
+                    <ul class="list-group">
+                        <li class="list-group-item lutadores-title">Campeão</li>
+                        <li class="list-group-item lutadores-item">
+                            @Model.Where(w=>w.StatusTorneio.Equals(StatusTorneioEnum.Campeao)).Select(s=>s.Nome).FirstOrDefault()
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-group-lutadores">
+                    <ul class="list-group">
+                        <li class="list-group-item lutadores-title">Vice - Campeão</li>
+                        <li class="list-group-item lutadores-item">
+                            @Model.Where(w=>w.StatusTorneio.Equals(StatusTorneioEnum.ViceCampecao)).Select(s=>s.Nome).FirstOrDefault()
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-group-lutadores">
+                    <ul class="list-group">
+                        <li class="list-group-item lutadores-title">Terceiro Colocado</li>
+                        <li class="list-group-item lutadores-item">
+                            @Model.Where(w=>w.StatusTorneio.Equals(StatusTorneioEnum.TerceiroColocado)).Select(s=>s.Nome).FirstOrDefault()
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

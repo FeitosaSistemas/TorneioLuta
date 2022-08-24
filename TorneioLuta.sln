@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorneioLuta", "TorneioLuta\TorneioLuta.csproj", "{30C111D3-AD5E-4968-9BB1-8F9B149A017B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorneioLuta.Domain", "TorneioLuta.Domain\TorneioLuta.Domain.csproj", "{50365EE4-52B0-429B-9347-D86C18AB102A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorneioLuta.IoC", "TorneioLuta.IoC\TorneioLuta.IoC.csproj", "{E4E0373D-D75C-46D4-80D4-917F341CE763}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorneioLuta.CrossCutting", "TorneioLuta.CorssCutting\TorneioLuta.CrossCutting.csproj", "{97478AB1-4DF4-4734-BEB3-B019ACD5CF4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - UI", "01 - UI", "{9037C7A7-05E2-4BF9-9CEF-F7D7B29EFCAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Services", "03 - Services", "{213C0FEF-99CC-42F2-959F-1502DCB94A40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Domain", "04 - Domain", "{C218EADA-E65A-4E42-BAD1-C6395CA7A8CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{CF830EEB-EC11-4685-8B47-1507ED01496A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Infra", "05 - Infra", "{752E2DAE-97A3-4FF3-8490-D200ADB23791}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorneioLuta.Interfaces", "TorneioLuta.Interfaces\TorneioLuta.Interfaces.csproj", "{E7C7C4E4-0129-4BE7-9464-3AC360FF28C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorneioLuta.Services", "TorneioLuta.Services\TorneioLuta.Services.csproj", "{C257046E-F72D-4D7E-BA43-18FEBC534751}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorneioLuta.Application", "TorneioLuta.Application\TorneioLuta.Application.csproj", "{9E252318-150B-4ED0-90DA-7546A494822C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Tests", "06 - Tests", "{AD81E252-3A3E-4376-A1BF-13737AAD4E6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorneioLuta.UnitTest", "TorneioLuta.UnitTest\TorneioLuta.UnitTest.csproj", "{E3D5FAB9-7360-44A1-A8C7-4B72A60E033B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30C111D3-AD5E-4968-9BB1-8F9B149A017B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C111D3-AD5E-4968-9BB1-8F9B149A017B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C111D3-AD5E-4968-9BB1-8F9B149A017B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C111D3-AD5E-4968-9BB1-8F9B149A017B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50365EE4-52B0-429B-9347-D86C18AB102A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50365EE4-52B0-429B-9347-D86C18AB102A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50365EE4-52B0-429B-9347-D86C18AB102A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50365EE4-52B0-429B-9347-D86C18AB102A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E0373D-D75C-46D4-80D4-917F341CE763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E0373D-D75C-46D4-80D4-917F341CE763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E0373D-D75C-46D4-80D4-917F341CE763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E0373D-D75C-46D4-80D4-917F341CE763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97478AB1-4DF4-4734-BEB3-B019ACD5CF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97478AB1-4DF4-4734-BEB3-B019ACD5CF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97478AB1-4DF4-4734-BEB3-B019ACD5CF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97478AB1-4DF4-4734-BEB3-B019ACD5CF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C7C4E4-0129-4BE7-9464-3AC360FF28C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C7C4E4-0129-4BE7-9464-3AC360FF28C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C7C4E4-0129-4BE7-9464-3AC360FF28C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C7C4E4-0129-4BE7-9464-3AC360FF28C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C257046E-F72D-4D7E-BA43-18FEBC534751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C257046E-F72D-4D7E-BA43-18FEBC534751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C257046E-F72D-4D7E-BA43-18FEBC534751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C257046E-F72D-4D7E-BA43-18FEBC534751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E252318-150B-4ED0-90DA-7546A494822C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E252318-150B-4ED0-90DA-7546A494822C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E252318-150B-4ED0-90DA-7546A494822C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E252318-150B-4ED0-90DA-7546A494822C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D5FAB9-7360-44A1-A8C7-4B72A60E033B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D5FAB9-7360-44A1-A8C7-4B72A60E033B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D5FAB9-7360-44A1-A8C7-4B72A60E033B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D5FAB9-7360-44A1-A8C7-4B72A60E033B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30C111D3-AD5E-4968-9BB1-8F9B149A017B} = {9037C7A7-05E2-4BF9-9CEF-F7D7B29EFCAA}
+		{50365EE4-52B0-429B-9347-D86C18AB102A} = {C218EADA-E65A-4E42-BAD1-C6395CA7A8CC}
+		{E4E0373D-D75C-46D4-80D4-917F341CE763} = {752E2DAE-97A3-4FF3-8490-D200ADB23791}
+		{97478AB1-4DF4-4734-BEB3-B019ACD5CF4D} = {752E2DAE-97A3-4FF3-8490-D200ADB23791}
+		{E7C7C4E4-0129-4BE7-9464-3AC360FF28C2} = {C218EADA-E65A-4E42-BAD1-C6395CA7A8CC}
+		{C257046E-F72D-4D7E-BA43-18FEBC534751} = {213C0FEF-99CC-42F2-959F-1502DCB94A40}
+		{9E252318-150B-4ED0-90DA-7546A494822C} = {CF830EEB-EC11-4685-8B47-1507ED01496A}
+		{E3D5FAB9-7360-44A1-A8C7-4B72A60E033B} = {AD81E252-3A3E-4376-A1BF-13737AAD4E6E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D52414C-4488-4D99-8110-2685A24A6851}
+	EndGlobalSection
+EndGlobal
